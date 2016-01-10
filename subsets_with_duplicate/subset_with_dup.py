@@ -14,7 +14,7 @@ class Solution:
         result.append(tmp_arr[:])
 
         for i in xrange(index, len(S)):
-            if i != index and S[i] == S[i-1]:
+            if i != index and S[i] == S[i - 1]:
                 continue
 
             tmp_arr.append(S[i])
