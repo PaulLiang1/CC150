@@ -15,10 +15,13 @@ class Solution:
         while len(queue) > 0:
             perm_str, index = queue.popleft()
 
+            # job done, write to output
             if len(perm_str) == len(nums):
                 perms.append(perm_str)
 
             else:
+                # insert num[i] into every possible position
+                # then push back to queue
                 for pos in xrange(len(perm_str) + 1):
                     new_str = perm_str[:]
                     new_str.insert(pos, nums[index])
