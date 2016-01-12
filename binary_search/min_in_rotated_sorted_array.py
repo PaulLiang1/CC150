@@ -1,3 +1,5 @@
+#  http://www.lintcode.com/en/problem/find-minimum-in-rotated-sorted-array/
+
 class Solution:
     # @param num: a rotated sorted array
     # @return: the minimum number in the array
@@ -32,4 +34,3 @@ class Solution:
             return A[low]
         else:
             return A[high]
-        
