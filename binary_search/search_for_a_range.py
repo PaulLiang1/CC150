@@ -1,3 +1,5 @@
+# http://www.lintcode.com/en/problem/search-for-a-range/
+
 class Solution:
 
     def searchFirstOccurance(self, A, target):
@@ -55,4 +57,3 @@ class Solution:
         last_occurance = self.searchLastOccurance(A, target)
 
         return [first_occurance, last_occurance]
-            
