@@ -1,4 +1,4 @@
-# https://leetcode.com/discuss/59787/share-my-java-recursive-solution
+# https://leetcode.com/discuss/59787/share-my-java-recursive-solutiong
 class Solution(object):
     """
     @param root <TreeNode>: The root of the BST.
