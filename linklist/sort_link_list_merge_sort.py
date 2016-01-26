@@ -26,14 +26,13 @@ class Solution:
         return self.merge(left, right)
 
     def findmid(self, node):
-        fast_ptr = node
+        fast_ptr = node.next
         slow_ptr = node
 
-        i = 0
-        while fast_ptr is not None:
-            fast_ptr = fast_ptr.next
-            if i % 2 == 0 and i != 0:
-                slow_ptr = slow_ptr.next
+        while fast_ptr is not None and fast_ptr.next is not None:
+            fast_ptr = fast_ptr.next.next
+            slow_ptr = slow_ptr.next
+
         return slow_ptr
 
     def merge(self, list1, list2):
